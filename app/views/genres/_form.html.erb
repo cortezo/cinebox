@@ -1,0 +1,10 @@
+<div class='well col-md-2'>
+  <%= form_for @genre do |f| %>
+    <div class='form-group'>
+      <%= f.label :name %>
+      <%= f.text_field :name, class: 'form-control' %>
+    </div>
+    <br/>
+    <%= f.submit(@genre.new_record? ? "Create Genre" : "Update Genre", class: 'btn btn-primary') %>
+  <% end %>
+</div>

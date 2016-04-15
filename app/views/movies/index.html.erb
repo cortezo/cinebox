@@ -1,6 +1,5 @@
-<% @movies.each do |m| %>
-  <div class="well">
-    <%= m.title %>
-    <%= m.genre.name %>
-  </div>
-<% end %>
+<div class="row">
+  <% @movies.each do |m| %>
+    <%= render 'movie', movie: m %>
+  <% end %>
+</div>
